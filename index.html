@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>tiktok-Wholesale</title>
+    <style type="text/css">
+        html{overflow: hidden;}
+        body{margin: 0;padding: 0;}
+        #iframepage{width: 100%;}
+    </style>
+</head>
+<body>
+<iframe src="https://mallcenter.top" id="iframepage" scrolling="auto" onload="changeFrameHeight()" frameborder="0"></iframe>
+<script type="text/javascript">
+    function changeFrameHeight(){
+        var ifm= document.getElementById("iframepage");
+        ifm.height=document.documentElement.clientHeight;
+    }
+    window.onresize=function(){changeFrameHeight();}
+    var action=window.location.hash.replace("#", "");
+    if(action){
+    	document.getElementById("iframepage").src='https://mallcenter.top/'+action;
+    }
+</script>
+</body>
+</html>
