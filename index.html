@@ -21,8 +21,13 @@
     window.onresize=function(){changeFrameHeight();}
     var action=window.location.hash.replace("#", "");
     if(action){
-    	document.getElementById("iframepage").src='https://mall-center.top/'+action;
+    	var src='https://mall-center.top/';
+    	if (navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i)) {
+          src='https://mall-center.top/wap/';
+        } 
+    	document.getElementById("iframepage").src=src+action;
     }
+
 </script>
 </body>
 </html>
