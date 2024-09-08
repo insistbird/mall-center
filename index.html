@@ -19,19 +19,15 @@
         ifm.height=document.documentElement.clientHeight;
     }
     window.onresize=function(){changeFrameHeight();}
-    var src='https://mall-center.top/'; 
-    console.log(navigator.userAgent)
+    var src='https://mall-center.top/';  
     	if (navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i)) { 
             src='https://mall-center.top/wap/';
             document.getElementById("iframepage").src=src;
-        } 
-    
+        }  
     var action=window.location.hash.replace("#", "");
-    if(action){
-    	
+    if(action){ 
     	document.getElementById("iframepage").src=src+action;
-    }
-
+    } 
 </script>
 </body>
 </html>
